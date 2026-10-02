@@ -1,13 +1,13 @@
-Ŀ¼�¹�����ļ��������ڲ�ͬ��CPU�����С��
+目录下共五个文件，适用于不同的CPU缓存大小。
 
-������ʹ�÷�Χ���飺
+以下是使用范围建议：
 
-|�ļ���|�㷨|����CPU�����С|���� $10^9$ �ٶ�|
-|-----|-----|-----|-----|
-|`superprime1_low.exe`|��ͨ�ֿ鰣��ɸ|2MB������|12s|
-|`superprime2_medium.exe`|6��ɸ��|2MB~4MB|6s|
-|`superprime3_pro.exe`|30��ɸ��|4MB~12MB|4s|
-|`superprime4_high.exe`|210��ɸ��|12MB~32MB|3s|
-|`superprime5_max.exe`|2310��ɸ��|32MB����|2.5s|
+|文件名|算法|建议CPU缓存大小|运算 $10^9$ 速度|运算 $10^{10}$ 速度|
+|-----|-----|-----|-----|-----|
+|`superprime1_low.exe`|普通分块埃氏筛|2MB或以下|7.17s|120.53s|
+|`superprime2_medium.exe`|6轮筛法|2MB~4MB|3.70s|83.95s|
+|`superprime3_pro.exe`|30轮筛法|4MB~12MB|2.82s|64.44s|
+|`superprime4_high.exe`|210轮筛法|12MB~32MB|2.47s|54.60s|
+|`superprime5_max.exe`|2310轮筛法|不建议使用|3.00s|62.92s|
 
-���У��ٶȵĲ��Ի���ΪAMD Ryzen R5 5600X(Up to 4.8GHz)+32GB DDR4 3200 RAM����д���ļ���
+其中，速度的测试环境为AMD Ryzen R5 5600X(Up to 4.8GHz)+24GB DDR4 3200 RAM，不写入文件。
